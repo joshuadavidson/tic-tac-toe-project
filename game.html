@@ -9,7 +9,7 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
 
   <!-- OG properties -->
-  <meta property="fb:app_id" content="" />
+  <meta property="fb:app_id" content="1702047350047090" />
   <meta property="og:url" content="https://jwaynedavidson.com/projects/tic-tac-toe/game.html" />
   <meta property="og:title" content="Tic-Tac-Toe" />
   <meta property="og:image" content="https://jwaynedavidson.com/img/tic-tac-toe-thumbnail.jpg" />
@@ -23,44 +23,59 @@
 </head>
 
 <body>
-  <div class="modal-background">
+  <!-- Modal for getting player choice -->
+  <div class="modal-start">
     <div class="modal-content">
       <div class="player-selection">X</div>
       <div class="player-selection">O</div>
     </div>
   </div>
 
-  <main class="hidden">
+  <!-- Modal for end of game -->
+  <div class="modal-end">
+    <div class="modal-content">
+      <p>Game Over</p>
+      <p id="closing-phrase"></p>
+      <p>Play Again?</p>
+      <button type="button" name="button">Yes</button>
+    </div>
+  </div>
+
+  <main>
+    <header>
+      <p id="thinking">Thinking...</p>
+    </header>
+
     <section>
       <table>
         <tr>
-          <td id="0,0">
+          <td id="0">
           </td>
-          <td id="0,1">
+          <td id="1">
           </td>
-          <td id="0,2">
-          </td>
-        </tr>
-        <tr>
-          <td id="1,0">
-          </td>
-          <td id="1,1">
-          </td>
-          <td id="1,2">
+          <td id="2">
           </td>
         </tr>
         <tr>
-          <td id="2,0">
+          <td id="3">
           </td>
-          <td id="2,1">
+          <td id="4">
           </td>
-          <td id="2,2">
+          <td id="5">
+          </td>
+        </tr>
+        <tr>
+          <td id="6">
+          </td>
+          <td id="7">
+          </td>
+          <td id="8">
           </td>
         </tr>
       </table>
     </section>
 
-    <footer id="footer-block">
+    <footer>
       <p>Coded by <a href="https://jwaynedavidson.com">Joshua Davidson</a></p>
     </footer>
   </main>
