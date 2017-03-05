@@ -1,6 +1,12 @@
 /* establish global variables for ESLint */
 /* global $ document jQuery */
 
+import $ from 'jquery';
+import jQuery from 'jquery';
+
+// import custom styles for project
+import './index.scss';
+
 // Placeholder for currentGame object
 let currentGame;
 
